@@ -13,7 +13,7 @@ Scope: build the Chic Parisien product detail page from `context.md`, with a Fre
 
 ## Notes
 
-- Product concept: Le Jardin Nocturne silk twill carré.
+- Product concept: Le Jardin Fauve silk twill carré.
 - The shared header/footer source is the template in `context.md`; no other page shell existed in the workspace when work began.
 - The gallery and recommendations use local images in `images/`.
 - Gallery images open their full-size local files and use reduced-motion-aware Tailwind hover/focus zoom transitions; no custom JavaScript was added.
