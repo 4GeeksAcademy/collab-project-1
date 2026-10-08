@@ -22,6 +22,8 @@ def serve_dir_directory_index():
         return stdout if out.returncode == 0 else f"<pre style='color: red;'>{stdout.decode('utf-8')}</pre>"
     if os.path.exists("index.html"):
         return send_from_directory(static_file_dir, 'index.html')
+    if os.path.exists("profile.html"):
+        return send_from_directory(static_file_dir, 'profile.html')
     if os.path.exists("cart.html"):
         return send_from_directory(static_file_dir, 'cart.html')
     else:
