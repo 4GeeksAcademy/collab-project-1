@@ -294,7 +294,7 @@ On each page, change **only** that page's link in both the desktop and mobile me
 | **Product View** | `product.html` | Image gallery, name, price (sale price in red if applicable), size and color selectors, quantity input, "Add to Cart" (gold) button, description/details in `<details>` accordions, "You may also like" grid |
 | **Cart** | `cart.html` | Line items (image, name, size, qty, price, remove link), order summary (subtotal, shipping, total), "Proceed to Checkout" button linking to `checkout.html`, "Continue Shopping" linking to `catalog.html` |
 | **Checkout** | `checkout.html` | Contact info, shipping address, shipping method (radio), payment fields, order summary, red "Place Order" button |
-| **Profile** | `profile.html` | Personal profile with photo placeholder, name, role, introduction, about, skills, projects, and contact details |
+| **Profile** | `profile.html` | Customer account: avatar, account info, saved addresses, order history table, wishlist grid, sign-out link |
 
 ---
 
