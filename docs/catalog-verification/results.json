@@ -1,0 +1,56 @@
+{
+  "viewports": [
+    {
+      "viewport": 375,
+      "document": 375,
+      "main": 375,
+      "header": 375,
+      "mainScroll": 375,
+      "gridColumns": "159.5px 159.5px",
+      "baseline": {
+        "document": 375,
+        "header": 375
+      }
+    },
+    {
+      "viewport": 768,
+      "document": 768,
+      "main": 768,
+      "header": 768,
+      "mainScroll": 768,
+      "gridColumns": "224px 224px 224px",
+      "baseline": {
+        "document": 768,
+        "header": 768
+      }
+    },
+    {
+      "viewport": 1440,
+      "document": 1440,
+      "main": 1440,
+      "header": 1440,
+      "mainScroll": 1440,
+      "gridColumns": "234px 234px 234px 234px",
+      "baseline": {
+        "document": 1440,
+        "header": 1440
+      }
+    }
+  ],
+  "interactions": [
+    "Native category, size and price controls respond; reset restores defaults; sort changes its selected option; demo controls intentionally leave 20 cards unchanged.",
+    "Keyboard Space toggles filters with a visible focus outline; Enter opens mobile menu; catalog and product links navigate."
+  ],
+  "errors": [],
+  "warnings": [
+    "A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.",
+    "A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.",
+    "A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details."
+  ],
+  "index.html": 200,
+  "catalog.html": 200,
+  "product.html": 200,
+  "cart.html": 200,
+  "profile.html": 200,
+  "checkout.html": 404
+}

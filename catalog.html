@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog | Chic Parisien</title>
+  <meta name="description" content="Explore 20 sample Chic Parisien styles, from clothing and knitwear to bags, shoes, and accessories. A responsive fashion-store catalog prototype.">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#0A0A0A] text-[#F5F5F0] font-sans min-h-screen flex flex-col">
@@ -141,7 +142,7 @@
 
         <div class="min-w-0">
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-            <h2 id="products-heading" class="font-serif text-2xl text-[#D4AF37]">The collection <span class="font-sans text-sm text-[#A3A3A3]">(8 products)</span></h2>
+            <h2 id="products-heading" class="font-serif text-2xl text-[#D4AF37]">The collection <span class="font-sans text-sm text-[#A3A3A3]">(20 products)</span></h2>
             <div class="flex items-center gap-3">
               <label for="sort" class="shrink-0 text-sm text-[#A3A3A3]">Sort by</label>
               <select id="sort" name="sort" aria-describedby="demo-note" class="min-w-0 w-full sm:w-auto bg-[#1A1A1A] border border-[#2A2A2A] text-[#F5F5F0] px-3 py-2 text-sm focus:outline-none focus:border-[#D4AF37]">
@@ -152,109 +153,348 @@
               </select>
             </div>
           </div>
-          <p id="demo-note" class="mb-6 text-sm text-[#A3A3A3]">Sample collection · Filter and sort selections are for demonstration and do not change the products.</p>
-          <div id="products" aria-labelledby="products-heading" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+          <p id="demo-note" class="mb-6 text-sm text-[#A3A3A3]">Sample collection · Filter and sort selections are for demonstration and do not change the products. Existing photography illustrates sample styles; all cards open the shared product-page prototype.</p>
+          <div id="products" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="products-heading" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <meta itemprop="name" content="Chic Parisien sample collection">
+            <meta itemprop="numberOfItems" content="20">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="1">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-01" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-01">
                 <div class="relative">
-                  <img src="images/tailored-jacket.jpg" alt="Brown zip-front bomber jacket on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
+                  <img itemprop="image" src="images/tailored-jacket.jpg" alt="Brown zip-front bomber jacket on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
                   <span class="absolute left-3 top-3 bg-[#D4AF37] text-[#0A0A0A] text-xs font-bold uppercase px-2 py-1">New</span>
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Outerwear</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Everyday Bomber Jacket</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€189.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Outerwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Everyday Bomber Jacket</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="189.00">€189.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="2">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-02" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-02">
                 <div class="relative">
-                  <img src="images/rouge-dress.jpg" alt="Red evening dress with a fitted waist and flowing skirt" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/rouge-dress.jpg" alt="Red evening dress with a fitted waist and flowing skirt" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Dresses</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Rouge Evening Dress</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€149.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Dresses</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Rouge Evening Dress</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="149.00">€149.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="3">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-03" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-03">
                 <div class="relative">
-                  <img src="images/cotton-shirt.jpg" alt="Blue patterned button-up shirt on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/cotton-shirt.jpg" alt="Blue patterned button-up shirt on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Tops</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Patterned Cotton Shirt</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€79.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Tops</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Patterned Cotton Shirt</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="79.00">€79.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="4">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-04" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-04">
                 <div class="relative">
-                  <img src="images/knit-sweater.jpg" alt="Ivory open-knit poncho with a fringed hem on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/knit-sweater.jpg" alt="Ivory open-knit poncho with a fringed hem on a hanger" width="600" height="800" loading="eager" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Knitwear</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Soft Knit Poncho</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€99.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Knitwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Soft Knit Poncho</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="99.00">€99.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="5">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-05" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-05">
                 <div class="relative">
-                  <img src="images/tailored-trousers.jpg" alt="Beige utility trousers with a gathered ankle and pocket details" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/tailored-trousers.jpg" alt="Beige utility trousers with a gathered ankle and pocket details" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Trousers</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Utility Trousers</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€119.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Trousers</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Utility Trousers</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="119.00">€119.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="6">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-06" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-06">
                 <div class="relative">
-                  <img src="images/shoulder-bag.jpg" alt="Structured red satchel with a top handle and metal clasp" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/shoulder-bag.jpg" alt="Structured red satchel with a top handle and metal clasp" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Bags</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">City Satchel</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€129.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Bags</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">City Satchel</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="129.00">€129.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="7">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-07" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-07">
                 <div class="relative">
-                  <img src="images/parisian-heels.jpg" alt="Blue floral pointed-toe heels against a pale blue background" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/parisian-heels.jpg" alt="Blue floral pointed-toe heels against a pale blue background" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Shoes</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Floral Statement Heels</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€139.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Shoes</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Floral Statement Heels</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="139.00">€139.00</data>
+                  </p>
                 </div>
               </a>
             </article>
-            <article class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
-              <a href="product.html" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="8">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-08" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-08">
                 <div class="relative">
-                  <img src="images/patterned-scarf.jpg" alt="Floral scarf draped around a woman’s head and neck" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
-                  
+                  <img itemprop="image" src="images/patterned-scarf.jpg" alt="Floral scarf draped around a woman’s head and neck" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
                 </div>
                 <div class="p-4">
-                  <p class="text-xs uppercase tracking-wider text-[#A3A3A3]">Accessories</p>
-                  <h3 class="mt-2 font-serif text-lg text-[#F5F5F0]">Patterned Scarf</h3>
-                  <p class="mt-2 font-semibold text-[#D4AF37]">€49.00</p>
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Accessories</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Patterned Scarf</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="49.00">€49.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="9">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-09" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-09">
+                <div class="relative">
+                  <img itemprop="image" src="images/tailored-jacket.jpg" alt="Brown zip-front bomber jacket on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Outerwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Weekend Bomber Jacket</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="179.00">€179.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="10">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-10" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-10">
+                <div class="relative">
+                  <img itemprop="image" src="images/rouge-dress.jpg" alt="Red evening dress with a fitted waist and flowing skirt" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Dresses</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Rouge Occasion Dress</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="159.00">€159.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="11">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-11" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-11">
+                <div class="relative">
+                  <img itemprop="image" src="images/cotton-shirt.jpg" alt="Blue patterned button-up shirt on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Tops</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Studio Cotton Shirt</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="85.00">€85.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="12">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-12" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-12">
+                <div class="relative">
+                  <img itemprop="image" src="images/knit-sweater.jpg" alt="Ivory open-knit poncho with a fringed hem on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Knitwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Weekend Knit Poncho</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="109.00">€109.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="13">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-13" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-13">
+                <div class="relative">
+                  <img itemprop="image" src="images/tailored-trousers.jpg" alt="Beige utility trousers with a gathered ankle and pocket details" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Trousers</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Everyday Utility Trousers</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="115.00">€115.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="14">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-14" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-14">
+                <div class="relative">
+                  <img itemprop="image" src="images/shoulder-bag.jpg" alt="Structured red satchel with a top handle and metal clasp" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Bags</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Evening Satchel</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="135.00">€135.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="15">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-15" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-15">
+                <div class="relative">
+                  <img itemprop="image" src="images/parisian-heels.jpg" alt="Blue floral pointed-toe heels against a pale blue background" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Shoes</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Garden Party Heels</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="145.00">€145.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="16">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-16" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-16">
+                <div class="relative">
+                  <img itemprop="image" src="images/patterned-scarf.jpg" alt="Floral scarf draped around a woman’s head and neck" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Accessories</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Floral Wrap Scarf</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="55.00">€55.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="17">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-17" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-17">
+                <div class="relative">
+                  <img itemprop="image" src="images/tailored-jacket.jpg" alt="Brown zip-front bomber jacket on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Outerwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">City Bomber Jacket</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="195.00">€195.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="18">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-18" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-18">
+                <div class="relative">
+                  <img itemprop="image" src="images/rouge-dress.jpg" alt="Red evening dress with a fitted waist and flowing skirt" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Dresses</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Rouge Party Dress</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="165.00">€165.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="19">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-19" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-19">
+                <div class="relative">
+                  <img itemprop="image" src="images/cotton-shirt.jpg" alt="Blue patterned button-up shirt on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Tops</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Relaxed Patterned Shirt</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="89.00">€89.00</data>
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#D4AF37] transition">
+              <meta itemprop="position" content="20">
+              <a href="product.html" itemprop="item" itemscope itemtype="https://schema.org/Product" itemid="#catalog-product-20" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">
+                <meta itemprop="sku" content="CP-SAMPLE-20">
+                <div class="relative">
+                  <img itemprop="image" src="images/knit-sweater.jpg" alt="Ivory open-knit poncho with a fringed hem on a hanger" width="600" height="800" loading="lazy" class="w-full aspect-[3/4] object-cover">
+                </div>
+                <div class="p-4">
+                  <p itemprop="category" class="text-xs uppercase tracking-wider text-[#A3A3A3]">Knitwear</p>
+                  <h3 itemprop="name" class="mt-2 font-serif text-lg text-[#F5F5F0]">Layering Knit Poncho</h3>
+                  <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 font-semibold text-[#D4AF37]">
+                    <meta itemprop="priceCurrency" content="EUR">
+                    <data itemprop="price" value="105.00">€105.00</data>
+                  </p>
                 </div>
               </a>
             </article>
@@ -265,7 +505,7 @@
             <a href="catalog.html#products" aria-current="page" aria-label="Page 1, current page" class="bg-[#D4AF37] text-[#0A0A0A] font-semibold px-4 py-3 hover:bg-[#B8962E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]">1</a>
             <span aria-disabled="true" class="border border-[#2A2A2A] text-[#A3A3A3] px-4 py-3 opacity-50">Next</span>
           </nav>
-          <p class="mt-3 text-center text-xs text-[#A3A3A3]">Showing all 8 sample products · Page 1 of 1</p>
+          <p class="mt-3 text-center text-xs text-[#A3A3A3]">Showing all 20 sample products · Page 1 of 1</p>
         </div>
       </div>
     </section>
